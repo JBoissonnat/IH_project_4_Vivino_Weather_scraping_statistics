@@ -34,6 +34,8 @@ Steps of the project :
 
 ### Code details
 
+DON'T FORGET TO OPEN A JUPYTER INSTANCE TO BE ABLE TO READ THE .ipynb FILE
+
 - The scraping of Vivino uses the API ; lines of code within a loop that call the data for a given number of pages and store it dictionnaries in a dataframe. A function is used to unravel properly the dictionnaries and their content (information about the bottles).
 Also every bottle get duplicated 12 times because the weather data is monthly
 - A common column between the 2 database is created, and the dataframes are merged on it.
