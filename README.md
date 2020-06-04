@@ -23,12 +23,29 @@ Steps of the project :
 
 ### Libraries
 
+- pandas
+- requests
+- json
+- time
+- matplotlib
+- numpy
+- seaborn
+- scipy
 
 ### Code details
 
+- The scraping of Vivino uses the API ; lines of code within a loop that call the data for a given number of pages and store it dictionnaries in a dataframe. A function is used to unravel properly the dictionnaries and their content (information about the bottles).
+Also every bottle get duplicated 12 times because the weather data is monthly
+- A common column between the 2 database is created, and the dataframes are merged on it.
+- Columns are cleaned and formated in the new dataframe
+  - 4 columns related to vivino ; domain, rating, appelation, region
+  - 7 columns related to weather ; station, CLDD (cooling days), HTDD (heating days)
+  - 2 time columns ; year and month
+- plots for the data exploration are mostly histograms and lines plots and scatterplots made with matplotlib and seaborn
+- Hypothesis testing are done with the scipy library, and check hypothesis on ratings and age
 
 ### Links
 
-Source page : 
+Source page : wine bottle data from vivino https://www.vivino.com/explore?e=eJzLLbI11jNVy83MszVXy02ssDU2UEuutHULUku2dQ0NUiuwNVRLT7MtSyzKTC1JzFHLT7ItSizJzEsvjk8sSy1KTE9Vy7dNSS1OVisviY4FKgZTRgDL1Bz4
 
-Presentation : 
+weather data from NCEI https://www.ncdc.noaa.gov/cdo-web/
